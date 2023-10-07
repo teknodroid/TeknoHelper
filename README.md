@@ -1,8 +1,8 @@
 # TeknoHelper
 
 TeknoHelper aracımız içinde bir sürü termux tool bulunduran bir araçtır ve kullanım ücretsizdir 
-KODLAR
 
+KODLAR
 
 
 pkg install git 
