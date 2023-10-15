@@ -74,7 +74,7 @@ display_menu() {
 
     type_animation "   TEKNOHELPER"
     echo -e "\033[1;32m************************************\033[0m"
-     echo -e "\033[33;5m    teknodroid\033[0m \033[32mTeknoHelper Menu\033[0m"
+     echo -e "\033[33;5m    teknodroid\033[0m \033[32mTeknoHelper Menü\033[0m"
     echo -e "\033[1;32m************************************\033[0m"
     type_animation "Please select an option:"
     type_animation "1] MaxPhisher"
@@ -97,8 +97,8 @@ display_menu() {
     type_animation "18] Seeker"
     type_animation "19] Banner-generator"
     type_animation "20] Kali-Linux"
-    type_animation "21] Update TMHelper"
-    type_animation "22] Uninstall TMHelper"
+    type_animation "21] Update TeknoHelper"
+    type_animation "22] Uninstall TeknoHelper"
     red_exit
 }
 
@@ -127,7 +127,7 @@ reset="\033[0m"
         1)
             type_animation "\nYou selected: MaxPhisher"
             type_animation "Please Wait MaxPhisher is Installing... "
-            sleep 5
+            sleep 2
             clear
             cd $HOME
             mkdir maxphisher
@@ -138,7 +138,7 @@ reset="\033[0m"
         2)
             type_animation "\nYou selected: PyPhisher"
             type_animation "Please Wait PyPhisher is Installing... "
-            sleep 5
+            sleep 2
             clear
             cd $HOME
             mkdir pyphisher
@@ -149,7 +149,7 @@ reset="\033[0m"
         3)
             type_animation "\nYou selected: Clifty"
             type_animation "Please Wait Clifty is Installing... "
-            sleep 5
+            sleep 2
             clear
             cd $HOME
             mkdir CLIFTY
@@ -160,7 +160,7 @@ reset="\033[0m"
         4)
             type_animation "\nYou selected: MaskPhish"
             type_animation "Please Wait MaskPhish is Installing... "
-            sleep 5
+            sleep 2
             clear
             cd $HOME
             mkdir MASKPHISH
@@ -173,7 +173,7 @@ reset="\033[0m"
         5)
             type_animation "\nYou selected: CamPhish"
             type_animation "Please Wait CamPhish is Installing... "
-            sleep 5
+            sleep 2
             clear
             cd $HOME
             apt-get -y install php openssh git wget
@@ -185,7 +185,7 @@ reset="\033[0m"
         6)
             type_animation "\nYou selected: Ubuntu Shell"
             type_animation "Please Wait Ubuntu Shell is Installing... "
-            sleep 5
+            sleep 2
             clear
             cd $HOME
             mkdir ubuntu-1
@@ -195,7 +195,7 @@ reset="\033[0m"
         7)
             type_animation "\nYou selected: Trace Exact Location"
             type_animation "Please Wait Trace Exact Location is Installing... "
-            sleep 5
+            sleep 2
             clear
             cd $HOME
             git clone https://github.com/thewhiteh4t/seeker
@@ -207,7 +207,7 @@ reset="\033[0m"
         8)
             type_animation "\nYou selected: Cam-Dumper"
             type_animation "Please Wait Cam-Dumper is Installing... "
-            sleep 5
+            sleep 2
             clear
             cd $HOME
             git clone https://github.com/LiNuX-Mallu/CAM-DUMPER
@@ -219,7 +219,7 @@ reset="\033[0m"
         9)
             type_animation "\nYou selected: Track-IP"
             type_animation "Please Wait Track-IP is Installing... "
-            sleep 5
+            sleep 2
             clear
             cd $HOME
             mkdir track-ip
@@ -230,7 +230,7 @@ reset="\033[0m"
         10)
             type_animation "\nYou selected: BruteForce"
             type_animation "Please Wait BruteForce is Installing... "
-            sleep 5
+            sleep 2
             clear
             cd $HOME
             rm -rf brute.py
@@ -239,7 +239,7 @@ reset="\033[0m"
         11)
             type_animation "\nYou selected: Tool-X"
             type_animation "Please Wait Tool-X is Installing... "
-            sleep 5
+            sleep 2
             clear
             cd $HOME
             apt update && pkg install git && git clone https://github.com/Error-4-You/Tool-X
@@ -250,7 +250,7 @@ reset="\033[0m"
             12)
             type_animation "\nYou selected: Oh-My-Shell"
             type_animation "Please Wait Oh-My-Shell is installing... "
-            sleep 5
+            sleep 2
             clear
             cd $HOME
             mkdir Oh-My-Shell
@@ -261,7 +261,7 @@ reset="\033[0m"
             13)
             type_animation "\nYou selected: Local2Internet"
             type_animation "Please Wait Local2Interner is installing... "
-            sleep 5
+            sleep 2
             clear
             cd $HOME
             apt install wget curl unzip php ruby python nodejs -y && npm install http-server -g && git clone https://github.com/KasRoudra/Local2Internet && cd Local2Internet && chmod +x l2in.rb && ruby l2in.rb
@@ -269,14 +269,14 @@ reset="\033[0m"
             14)
             type_animation "\nYou selected: StylishTermux"
             type_animation "Please Wait StylishTermux is installing... "
-            sleep 5
+            sleep 2
             cd $HOME
             git clone https://github.com/KasRoudra/stylishtermux && cd stylishtermux && chmod +x * && bash install.sh
             ;;
             15)
             type_animation "\nYou selected: SetFont"
             type_animation "Please Wait SetFont is installing... "
-            sleep 5
+            sleep 2
             clear
             cd $HOME
             git clone https://github.com/KasRoudra/setfont && cd setfont && chmod +x * && bash install.sh
@@ -284,7 +284,7 @@ reset="\033[0m"
             16)
             type_animation "\nYou selected: HPhisher"
             type_animation "Please Wait HPhisher is installing... "
-            sleep 5
+            sleep 2
             clear
             pkg update -y
 pkg upgrade -y
@@ -297,7 +297,7 @@ bash hphisher.sh
             17)
             type_animation "\nYou selected: SpamX"
             type_animation "Please Wait SpamX is installing... "
-            sleep 5
+            sleep 2
             clear
             apt-get update -y
 apt-get upgrade -y
@@ -317,7 +317,7 @@ bash spamx.sh
             18)
             type_animation "\nYou selected: Seeker"
             type_animation "Please Wait Seeker is installing... "
-            sleep 5
+            sleep 2
             clear
             cd $HOME
             cd seeker
@@ -331,7 +331,7 @@ python3 seeker.py
             19)
             type_animation "\nYou selected: banner-generator"
             type_animation "Please wait banner-generator is installing... "
-            sleep 5
+            sleep 2
             clear
             cd $HOME
             apt install python2
@@ -344,7 +344,7 @@ python3 seeker.py
             20)
             type_animation "\nYou selected: Kali-Linux"
             type_animation "Please wait Kali-Linux is installing... "
-            sleep 5
+            sleep 2
             clear
 $HOME
     cd
@@ -411,7 +411,7 @@ fi
             
             ;;
            21)
-        type_animation "WAIT WE ARE UPDATING TMHelper..."
+        type_animation "WAIT WE ARE UPDATING TeknoHelper..."
         cd /data/data/com.termux/files/usr/TeknoHelper/
         git reset --hard
         git pull --force
@@ -429,7 +429,7 @@ fi
 
 if [ "$lastchoice" == "0" ]; then
     echo
-    green_text_animation "TMHelper Exited successfully."
+    green_text_animation "TeknoHelper Exited successfully."
     echo
     print_random_nice_message
     exit 0
