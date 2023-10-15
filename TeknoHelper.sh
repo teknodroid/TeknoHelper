@@ -433,7 +433,7 @@ fi
 
 if [ "$lastchoice" == "0" ]; then
     echo
-    green_text_animation "TeknoHelper'den başarıyla çıkıldı."
+    green_text_animation "TeknoHelper'den Başarıyla Çıkış Yapıldı."
     echo
     print_random_nice_message
     exit 0
