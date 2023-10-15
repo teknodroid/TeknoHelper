@@ -29,33 +29,33 @@ function green_text_animation() {
 
 # Define an array of positive messages
 positive_messages=(
-    "Have a fantastic day!"
-    "You've got this! Keep going."
-    "Spread positivity wherever you go."
-    "Believe in yourself and your dreams."
-    "You are capable of achieving great things."
-    "Your positive attitude can change the world."
-    "Embrace challenges as opportunities for growth."
-    "Remember to smile and brighten someone's day."
-    "Your efforts will pay off in the long run."
-    "You're not alone – reach out if you need support."
-    "Your potential is limitless. Keep pushing forward."
-    "You have the power to make a difference."
-    "Challenges are stepping stones to success."
-    "Today is a gift; that's why it's called the present."
-    "Your perseverance will lead to success."
-    "Radiate positivity and inspire those around you."
-    "The best way to predict the future is to create it."
-    "You possess the qualities needed to achieve greatness."
-    "Success starts with a positive mindset and hard work."
-    "Your journey is uniquely yours – embrace it fully."
-    "You are a beacon of light in the lives of others."
-    "Small steps forward still lead to progress."
-    "Believe in the magic within you."
-    "Your dreams are valid and achievable."
-    "You have the strength to overcome any challenge."
-    "Your presence makes a positive impact."
-    "Keep your face to the sunshine and shadows will fall behind you."
+    "Muhteşem bir gün geçir!"
+    "Anladın bunu! Devam et."
+    "Gittiğiniz her yere pozitifliği yayın."
+    "Kendinize ve hayallerinize inanın."
+    "Harika şeyler başarabilecek kapasitedesin."
+    "Olumlu tavrınız dünyayı değiştirebilir."
+    "Zorlukları büyüme fırsatları olarak kabul edin."
+    "Gülümsemeyi ve birinin gününü aydınlatmayı unutmayın."
+    "Çabalarınız uzun vadede karşılığını verecektir."
+    "Yalnız değilsiniz; desteğe ihtiyacınız olursa bize ulaşın."
+    "Potansiyeliniz sınırsız. İlerlemeye devam edin."
+    "Bir fark yaratma gücüne sahipsiniz."
+    "Zorluklar başarıya giden basamaklardır."
+    "Bugün bir hediye; bu yüzden ona hediye deniyor."
+    "Aziminiz sizi başarıya götürecektir."
+    "Pozitiflik yayın ve etrafınızdakilere ilham verin."
+    "Geleceği tahmin etmenin en iyi yolu onu yaratmaktır."
+    "Büyüklüğe ulaşmak için gereken niteliklere sahipsiniz."
+    "Başarı olumlu bir zihniyet ve sıkı çalışmayla başlar."
+    "Yolculuğunuz tamamen size aittir; onu tümüyle kucaklayın."
+    "Siz başkalarının hayatında bir ışık fenerisiniz."
+    "İleriye doğru atılan küçük adımlar yine de ilerlemeye yol açar."
+    "İçinizdeki büyüye inanın."
+    "Hayalleriniz geçerli ve ulaşılabilir."
+    "Her türlü zorluğun üstesinden gelebilecek güce sahipsiniz."
+    "Varlığınız olumlu bir etki yaratıyor."
+    "Yüzünüzü güneş ışığına çevirin, gölgeler arkanıza düşecektir."
 )
 
 # Define a function to print a random positive message in bold
@@ -76,7 +76,7 @@ display_menu() {
     echo -e "\033[1;32m************************************\033[0m"
      echo -e "\033[33;5m    teknodroid\033[0m \033[32mTeknoHelper Menü\033[0m"
     echo -e "\033[1;32m************************************\033[0m"
-    type_animation "Please select an option:"
+    type_animation "Lütfen bir seçenek seçin:"
     type_animation "1] MaxPhisher"
     type_animation "2] PyPhisher"
     type_animation "3] Clifty"
@@ -107,7 +107,7 @@ display_menu() {
 # Main loop
 while true; do
     display_menu
-    green_text_animation ">> Select an Option --> "
+    green_text_animation ">> Bir seçenek seçin --> "
     echo -n " "
     read choice
 
@@ -119,14 +119,14 @@ reset="\033[0m"
     case $choice in
         0)
           echo
-          green_text_animation "TeknoHelper Exited successfully."
+          green_text_animation "TeknoHelper'den Başarıyla Çıkış Yapıldı ."
           echo
           print_random_nice_message
         exit 0
             ;;
         1)
             type_animation "\nYou selected: MaxPhisher"
-            type_animation "Please Wait MaxPhisher is Installing... "
+            type_animation "Lütfen Bekleyin MaxPhisher İndiriliyor... "
             sleep 2
             clear
             cd $HOME
@@ -137,7 +137,7 @@ reset="\033[0m"
             ;;
         2)
             type_animation "\nYou selected: PyPhisher"
-            type_animation "Please Wait PyPhisher is Installing... "
+            type_animation "Lütfen Bekleyin PyPhisher İndiriliyor... "
             sleep 2
             clear
             cd $HOME
@@ -148,7 +148,7 @@ reset="\033[0m"
             ;;
         3)
             type_animation "\nYou selected: Clifty"
-            type_animation "Please Wait Clifty is Installing... "
+            type_animation "Lütfen Bekleyin Clifty İndiriliyor... "
             sleep 2
             clear
             cd $HOME
@@ -159,7 +159,7 @@ reset="\033[0m"
             ;;
         4)
             type_animation "\nYou selected: MaskPhish"
-            type_animation "Please Wait MaskPhish is Installing... "
+            type_animation "Lütfen Bekleyin MaskPhish İndiriliyor... "
             sleep 2
             clear
             cd $HOME
@@ -172,7 +172,7 @@ reset="\033[0m"
             ;;
         5)
             type_animation "\nYou selected: CamPhish"
-            type_animation "Please Wait CamPhish is Installing... "
+            type_animation "Lütfen Bekleyin CamPhish İndiriliyor... "
             sleep 2
             clear
             cd $HOME
@@ -184,7 +184,7 @@ reset="\033[0m"
             ;;
         6)
             type_animation "\nYou selected: Ubuntu Shell"
-            type_animation "Please Wait Ubuntu Shell is Installing... "
+            type_animation "Lütfen Bekleyin Ubuntu Shell İndiriliyor... "
             sleep 2
             clear
             cd $HOME
@@ -194,7 +194,7 @@ reset="\033[0m"
             ;;
         7)
             type_animation "\nYou selected: Trace Exact Location"
-            type_animation "Please Wait Trace Exact Location is Installing... "
+            type_animation "Lutfen Bekleyin Trace Exact Location İndiriliyor... "
             sleep 2
             clear
             cd $HOME
@@ -206,7 +206,7 @@ reset="\033[0m"
             ;;
         8)
             type_animation "\nYou selected: Cam-Dumper"
-            type_animation "Please Wait Cam-Dumper is Installing... "
+            type_animation "Lütfen Bekleyin Cam-Dumper İndiriliyor... "
             sleep 2
             clear
             cd $HOME
@@ -218,7 +218,7 @@ reset="\033[0m"
             ;;
         9)
             type_animation "\nYou selected: Track-IP"
-            type_animation "Please Wait Track-IP is Installing... "
+            type_animation "Lütfen Bekleyin Track-IP İndiriliyor... "
             sleep 2
             clear
             cd $HOME
@@ -229,7 +229,7 @@ reset="\033[0m"
             ;;
         10)
             type_animation "\nYou selected: BruteForce"
-            type_animation "Please Wait BruteForce is Installing... "
+            type_animation "Lütfen Bekleyin BruteForce İndiriliyor... "
             sleep 2
             clear
             cd $HOME
@@ -238,7 +238,7 @@ reset="\033[0m"
             ;;
         11)
             type_animation "\nYou selected: Tool-X"
-            type_animation "Please Wait Tool-X is Installing... "
+            type_animation "Lütfen Bekleyin Tool-X İndiriliyor... "
             sleep 2
             clear
             cd $HOME
@@ -249,7 +249,7 @@ reset="\033[0m"
             ;;
             12)
             type_animation "\nYou selected: Oh-My-Shell"
-            type_animation "Please Wait Oh-My-Shell is installing... "
+            type_animation "Lütfen Bekleyin Oh-My-Shell İndiriliyor... "
             sleep 2
             clear
             cd $HOME
@@ -260,7 +260,7 @@ reset="\033[0m"
             ;;
             13)
             type_animation "\nYou selected: Local2Internet"
-            type_animation "Please Wait Local2Interner is installing... "
+            type_animation "Lütfen Bekleyin Local2Interner İndiriliyor... "
             sleep 2
             clear
             cd $HOME
@@ -268,14 +268,14 @@ reset="\033[0m"
             ;;
             14)
             type_animation "\nYou selected: StylishTermux"
-            type_animation "Please Wait StylishTermux is installing... "
+            type_animation "Lütfen Bekleyin StylishTermux İndiriliyor... "
             sleep 2
             cd $HOME
             git clone https://github.com/KasRoudra/stylishtermux && cd stylishtermux && chmod +x * && bash install.sh
             ;;
             15)
             type_animation "\nYou selected: SetFont"
-            type_animation "Please Wait SetFont is installing... "
+            type_animation "Lutfen Bekleyin SetFont İndiriliyor.. "
             sleep 2
             clear
             cd $HOME
@@ -283,7 +283,7 @@ reset="\033[0m"
             ;;
             16)
             type_animation "\nYou selected: HPhisher"
-            type_animation "Please Wait HPhisher is installing... "
+            type_animation "Lütfen Bekleyin HPhisher İndiriliyor... "
             sleep 2
             clear
             pkg update -y
@@ -296,7 +296,7 @@ bash hphisher.sh
             ;;
             17)
             type_animation "\nYou selected: SpamX"
-            type_animation "Please Wait SpamX is installing... "
+            type_animation "Lütfen Bekleyin SpamX İndiriliyor... "
             sleep 2
             clear
             apt-get update -y
@@ -316,7 +316,7 @@ bash spamx.sh
             ;;
             18)
             type_animation "\nYou selected: Seeker"
-            type_animation "Please Wait Seeker is installing... "
+            type_animation "Lütfen Bekleyin Seeker İndiriliyor... "
             sleep 2
             clear
             cd $HOME
@@ -330,7 +330,7 @@ python3 seeker.py
             ;;
             19)
             type_animation "\nYou selected: banner-generator"
-            type_animation "Please wait banner-generator is installing... "
+            type_animation "Lütfen Bekleyin banner-generator İndiriliyor... "
             sleep 2
             clear
             cd $HOME
@@ -343,7 +343,7 @@ python3 seeker.py
             ;;
             20)
             type_animation "\nYou selected: Kali-Linux"
-            type_animation "Please wait Kali-Linux is installing... "
+            type_animation "Lütfen Bekleyin Kali-Linux İndiriliyor... "
             sleep 2
             clear
 $HOME
@@ -411,12 +411,12 @@ fi
             
             ;;
            21)
-        type_animation "WAIT WE ARE UPDATING TeknoHelper..."
+        type_animation "LÜTFEN BEKLEYİN TeknoHelper'ı GÜNCELLİYORUZ..."
         cd /data/data/com.termux/files/usr/TeknoHelper/
         git reset --hard
         git pull --force
         cd
-        type_animation "UPDATE COMPLETE."
+        type_animation "GÜNCELLEME TAMAMLANDI."
 
         
         ;;
@@ -429,7 +429,7 @@ fi
 
 if [ "$lastchoice" == "0" ]; then
     echo
-    green_text_animation "TeknoHelper Exited successfully."
+    green_text_animation "TeknoHelper'den başarıyla çıkıldı."
     echo
     print_random_nice_message
     exit 0
