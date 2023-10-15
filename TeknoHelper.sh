@@ -72,9 +72,13 @@ print_random_nice_message() {
 display_menu() {
     clear
 
-    type_animation "   TEKNOHELPER"
+    type_animation "  _____ _____ _  ___   _  ___  _   _ _____ _     ____  _____ ____  "
+    type_animation " |_   _| ____| |/ / \ | |/ _ \| | | | ____| |   |  _ \| ____|  _ \ "
+    type_animation "   | | |  _| | ' /|  \| | | | | |_| |  _| | |   | |_) |  _| | |_) |"
+    type_animation "   | | | |___| . \| |\  | |_| |  _  | |___| |___|  __/| |___|  _ < "
+    type_animation "   |_| |_____|_|\_\_| \_|\___/|_| |_|_____|_____|_|   |_____|_| \_\"
     echo -e "\033[1;32m************************************\033[0m"
-     echo -e "\033[33;5m    teknodroid\033[0m \033[32mTeknoHelper Menü\033[0m"
+     echo -e "\033[33;5m    teknodroid\033[0m \033[32mTeknoHelper MENÜ\033[0m"
     echo -e "\033[1;32m************************************\033[0m"
     type_animation "Lütfen bir seçenek seçin:"
     type_animation "1] MaxPhisher"
