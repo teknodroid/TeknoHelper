@@ -75,7 +75,7 @@ display_menu() {
     type_animation "|T|E|K|N|O|H|E|L|P|E|R|"
     type_animation "+-+-+-+-+-+-+-+-+-+-+-+"
     echo -e "\033[1;32m************************************\033[0m"
-     echo -e "\033[33;5m    Solacexcv\033[0m \033[32mHelper Menu\033[0m"
+     echo -e "\033[33;5m    TeknoDroid\033[0m \033[32mTeknoHelper Menü\033[0m"
     echo -e "\033[1;32m************************************\033[0m"
     type_animation "Please select an option:"
     type_animation "1] MaxPhisher"
