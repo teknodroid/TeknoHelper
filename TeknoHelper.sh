@@ -102,8 +102,8 @@ display_menu() {
     type_animation "18] Seeker"
     type_animation "19] Banner-generator"
     type_animation "20] Kali-Linux"
-    type_animation "21] Update TMHelper"
-    type_animation "22] Uninstall TMHelper"
+    type_animation "21] Update TeknoHelper"
+    type_animation "22] Uninstall TeknoHelper"
     red_exit
 }
 
@@ -356,7 +356,7 @@ $HOME
     cd kali-linux
     bash start-kali.sh
     cd $PREFIX
-    cd TMHelper
+    cd TeknoHelper
     chmod +x kali.sh
     bash kali.sh
 ;;
@@ -373,40 +373,40 @@ reset="\033[0m"
 clear
 echo " "
 # Print title with red background and bold text
-echo -e "${red_bg}${bold} Uninstall Page: TMHelper ${reset}"
+echo -e "${red_bg}${bold} Uninstall Page: TeknoHelper ${reset}"
 
 # Print the message with bold points
 echo -e "${bold}Dear User,${reset}"
 
 # Print the introductory part
-echo -e "We understand that you're considering uninstalling TMHelper, but we'd like to take a moment to highlight the valuable advantages it brings to your experience.\n"
+echo -e "We understand that you're considering uninstalling TeknoHelper, but we'd like to take a moment to highlight the valuable advantages it brings to your experience.\n"
 
 # Print the key benefits
-echo -e "Here's why TMHelper is an asset that you might want to keep:\n"
+echo -e "Here's why TeknoHelper is an asset that you might want to keep:\n"
 
 echo -e -n "${bold}1. ${green_bg}Powerful and Comprehensive:${reset}"
-echo -e "TMHelper is not just another program; it's a power tool designed to provide you with a curated selection of hacking, penetration testing, and programming tools. These tools are organized into us"
+echo -e "TeknoHelper is not just another program; it's a power tool designed to provide you with a curated selection of hacking, penetration testing, and programming tools. These tools are organized into us"
 
 echo -e -n "${bold}2. ${green_bg}Efficiency and Ease of Use:${reset}"
 echo -e "TMHelper streamlines your workflow by offering a simple menu that allows you to quickly install new and updated scripts. No more hunting for tools or dealing with complex installations – Termux"
 
 echo -e -n "${bold}3. ${green_bg}Security Matters:${reset}"
-echo -e "Your system's security is our priority. TMHelper has been carefully designed and tested to ensure that it won't cause harm to your system. You can confidently explore and experiment without worry."
+echo -e "Your system's security is our priority. TeknoHelper has been carefully designed and tested to ensure that it won't cause harm to your system. You can confidently explore and experiment without worry."
 
 # Print the encouragement to keep Termux Helper
-echo -e "\nWe encourage you to reconsider uninstalling TMHelper. It's a versatile resource that can empower you in your coding, testing, and exploration endeavors.\n"
+echo -e "\nWe encourage you to reconsider uninstalling TeknoHelper. It's a versatile resource that can empower you in your coding, testing, and exploration endeavors.\n"
 
 # Prompt user for input with red background
-echo -e -n "${red_bg}${bold}Type 'uninstall' to proceed with uninstallation or press Enter to keep TMHelper:"
+echo -e -n "${red_bg}${bold}Type 'uninstall' to proceed with uninstallation or press Enter to keep TeknoHelper:"
 read -p "" user_input
 echo -e "${reset}"
 # Check user's input and respond accordingly
 if [[ "$user_input" == "uninstall" ]]; then
     echo "Uninstalling..."
-    bash $PREFIX/TMHelper/uninstall.sh
+    bash $PREFIX/TeknoHelper/uninstall.sh
     break
 else
-    echo "Thank you for choosing to keep TMHelper. It's an investment in your productivity and growth."
+    echo "Thank you for choosing to keep TeknoHelper. It's an investment in your productivity and growth."
 fi
 
 
@@ -416,8 +416,8 @@ fi
             
             ;;
            21)
-        type_animation "WAIT WE ARE UPDATING TMHelper..."
-        cd /data/data/com.termux/files/usr/TMHelper/
+        type_animation "WAIT WE ARE UPDATING TeknoHelper..."
+        cd /data/data/com.termux/files/usr/TeknoHelper/
         git reset --hard
         git pull --force
         cd
@@ -434,7 +434,7 @@ fi
 
 if [ "$lastchoice" == "0" ]; then
     echo
-    green_text_animation "TMHelper Exited successfully."
+    green_text_animation "TeknoHelper Exited successfully."
     echo
     print_random_nice_message
     exit 0
