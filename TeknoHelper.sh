@@ -72,11 +72,11 @@ print_random_nice_message() {
 display_menu() {
     clear
 
-    type_animation "   _______ ______ _ ___ _ ____ _ _ ______ _ _____ ______ _____ "
-    type_animation "    |__   __|  ____| |/ / \ | |/ __ \| |  | |  ____| |    |  __ \|  ____|  __ \ "
-    type_animation "     | |  | |__  | ' /|  \| | |  | | |__| | |__  | |    | |__) | |__  | |__) |"
+    type_animation "  _______ ______ _  ___   _  ____  _    _ ______ _      _____  ______ _____  "
+    type_animation " |__   __|  ____| |/ / \ | |/ __ \| |  | |  ____| |    |  __ \|  ____|  __ \ "
+    type_animation "    | |  | |__  | ' /|  \| | |  | | |__| | |__  | |    | |__) | |__  | |__) |"
     type_animation "    | |  |  __| |  < | . ` | |  | |  __  |  __| | |    |  ___/|  __| |  _  / "
-    type_animation "      | |  | |____| . \| |\  | |__| | |  | | |____| |____| |    | |____| | \ \ "
+    type_animation "    | |  | |____| . \| |\  | |__| | |  | | |____| |____| |    | |____| | \ \ "
     type_animation "    |_|  |______|_|\_\_| \_|\____/|_|  |_|______|______|_|    |______|_|  \_\"
     echo -e "\033[1;32m************************************\033[0m"
      echo -e "\033[33;5m    Solacexcv\033[0m \033[32mHelper Menu\033[0m"
@@ -132,7 +132,7 @@ reset="\033[0m"
         1)
             type_animation "\nYou selected: MaxPhisher"
             type_animation "Lütfen Bekleyin MaxPhisher İndiriliyor... "
-            sleep 2
+            sleep 5
             clear
             cd $HOME
             mkdir maxphisher
@@ -143,7 +143,7 @@ reset="\033[0m"
         2)
             type_animation "\nYou selected: PyPhisher"
             type_animation "Lütfen Bekleyin PyPhisher İndiriliyor... "
-            sleep 2
+            sleep 5
             clear
             cd $HOME
             mkdir pyphisher
@@ -154,7 +154,7 @@ reset="\033[0m"
         3)
             type_animation "\nYou selected: Clifty"
             type_animation "Lütfen Bekleyin Clifty İndiriliyor... "
-            sleep 2
+            sleep 5
             clear
             cd $HOME
             mkdir CLIFTY
@@ -165,7 +165,7 @@ reset="\033[0m"
         4)
             type_animation "\nYou selected: MaskPhish"
             type_animation "Lütfen Bekleyin MaskPhish İndiriliyor... "
-            sleep 2
+            sleep 5
             clear
             cd $HOME
             mkdir MASKPHISH
@@ -178,7 +178,7 @@ reset="\033[0m"
         5)
             type_animation "\nYou selected: CamPhish"
             type_animation "Lütfen Bekleyin CamPhish İndiriliyor... "
-            sleep 2
+            sleep 5
             clear
             cd $HOME
             apt-get -y install php openssh git wget
@@ -190,7 +190,7 @@ reset="\033[0m"
         6)
             type_animation "\nYou selected: Ubuntu Shell"
             type_animation "Lütfen Bekleyin Ubuntu Shell İndiriliyor... "
-            sleep 2
+            sleep 5
             clear
             cd $HOME
             mkdir ubuntu-1
@@ -199,8 +199,8 @@ reset="\033[0m"
             ;;
         7)
             type_animation "\nYou selected: Trace Exact Location"
-            type_animation "Lutfen Bekleyin Trace Exact Location İndiriliyor... "
-            sleep 2
+            type_animation "Lütfen Bekleyin Trace Exact Location İndiriliyor... "
+            sleep 5
             clear
             cd $HOME
             git clone https://github.com/thewhiteh4t/seeker
@@ -212,7 +212,7 @@ reset="\033[0m"
         8)
             type_animation "\nYou selected: Cam-Dumper"
             type_animation "Lütfen Bekleyin Cam-Dumper İndiriliyor... "
-            sleep 2
+            sleep 5
             clear
             cd $HOME
             git clone https://github.com/LiNuX-Mallu/CAM-DUMPER
@@ -224,7 +224,7 @@ reset="\033[0m"
         9)
             type_animation "\nYou selected: Track-IP"
             type_animation "Lütfen Bekleyin Track-IP İndiriliyor... "
-            sleep 2
+            sleep 5
             clear
             cd $HOME
             mkdir track-ip
@@ -235,7 +235,7 @@ reset="\033[0m"
         10)
             type_animation "\nYou selected: BruteForce"
             type_animation "Lütfen Bekleyin BruteForce İndiriliyor... "
-            sleep 2
+            sleep 5
             clear
             cd $HOME
             rm -rf brute.py
@@ -244,7 +244,7 @@ reset="\033[0m"
         11)
             type_animation "\nYou selected: Tool-X"
             type_animation "Lütfen Bekleyin Tool-X İndiriliyor... "
-            sleep 2
+            sleep 5
             clear
             cd $HOME
             apt update && pkg install git && git clone https://github.com/Error-4-You/Tool-X
@@ -255,7 +255,7 @@ reset="\033[0m"
             12)
             type_animation "\nYou selected: Oh-My-Shell"
             type_animation "Lütfen Bekleyin Oh-My-Shell İndiriliyor... "
-            sleep 2
+            sleep 5
             clear
             cd $HOME
             mkdir Oh-My-Shell
@@ -266,7 +266,7 @@ reset="\033[0m"
             13)
             type_animation "\nYou selected: Local2Internet"
             type_animation "Lütfen Bekleyin Local2Interner İndiriliyor... "
-            sleep 2
+            sleep 5
             clear
             cd $HOME
             apt install wget curl unzip php ruby python nodejs -y && npm install http-server -g && git clone https://github.com/KasRoudra/Local2Internet && cd Local2Internet && chmod +x l2in.rb && ruby l2in.rb
@@ -274,14 +274,14 @@ reset="\033[0m"
             14)
             type_animation "\nYou selected: StylishTermux"
             type_animation "Lütfen Bekleyin StylishTermux İndiriliyor... "
-            sleep 2
+            sleep 5
             cd $HOME
             git clone https://github.com/KasRoudra/stylishtermux && cd stylishtermux && chmod +x * && bash install.sh
             ;;
             15)
             type_animation "\nYou selected: SetFont"
-            type_animation "Lutfen Bekleyin SetFont İndiriliyor.. "
-            sleep 2
+            type_animation "Lütfen Bekleyin SetFont İndiriliyor... "
+            sleep 5
             clear
             cd $HOME
             git clone https://github.com/KasRoudra/setfont && cd setfont && chmod +x * && bash install.sh
@@ -289,7 +289,7 @@ reset="\033[0m"
             16)
             type_animation "\nYou selected: HPhisher"
             type_animation "Lütfen Bekleyin HPhisher İndiriliyor... "
-            sleep 2
+            sleep 5
             clear
             pkg update -y
 pkg upgrade -y
@@ -302,7 +302,7 @@ bash hphisher.sh
             17)
             type_animation "\nYou selected: SpamX"
             type_animation "Lütfen Bekleyin SpamX İndiriliyor... "
-            sleep 2
+            sleep 5
             clear
             apt-get update -y
 apt-get upgrade -y
@@ -322,7 +322,7 @@ bash spamx.sh
             18)
             type_animation "\nYou selected: Seeker"
             type_animation "Lütfen Bekleyin Seeker İndiriliyor... "
-            sleep 2
+            sleep 5
             clear
             cd $HOME
             cd seeker
@@ -336,7 +336,7 @@ python3 seeker.py
             19)
             type_animation "\nYou selected: banner-generator"
             type_animation "Lütfen Bekleyin banner-generator İndiriliyor... "
-            sleep 2
+            sleep 5
             clear
             cd $HOME
             apt install python2
@@ -349,7 +349,7 @@ python3 seeker.py
             20)
             type_animation "\nYou selected: Kali-Linux"
             type_animation "Lütfen Bekleyin Kali-Linux İndiriliyor... "
-            sleep 2
+            sleep 5
             clear
 $HOME
     cd
@@ -379,34 +379,34 @@ echo -e "${red_bg}${bold} Uninstall Page: TMHelper ${reset}"
 echo -e "${bold}Dear User,${reset}"
 
 # Print the introductory part
-echo -e "We understand that you're considering uninstalling TeknoHelper, but we'd like to take a moment to highlight the valuable advantages it brings to your experience.\n"
+echo -e "We understand that you're considering uninstalling TMHelper, but we'd like to take a moment to highlight the valuable advantages it brings to your experience.\n"
 
 # Print the key benefits
-echo -e "Here's why TeknoHelper is an asset that you might want to keep:\n"
+echo -e "Here's why TMHelper is an asset that you might want to keep:\n"
 
 echo -e -n "${bold}1. ${green_bg}Powerful and Comprehensive:${reset}"
-echo -e "TeknoHelper is not just another program; it's a power tool designed to provide you with a curated selection of hacking, penetration testing, and programming tools. These tools are organized into us"
+echo -e "TMHelper is not just another program; it's a power tool designed to provide you with a curated selection of hacking, penetration testing, and programming tools. These tools are organized into us"
 
 echo -e -n "${bold}2. ${green_bg}Efficiency and Ease of Use:${reset}"
-echo -e "TeknoHelper streamlines your workflow by offering a simple menu that allows you to quickly install new and updated scripts. No more hunting for tools or dealing with complex installations – Termux"
+echo -e "TMHelper streamlines your workflow by offering a simple menu that allows you to quickly install new and updated scripts. No more hunting for tools or dealing with complex installations – Termux"
 
 echo -e -n "${bold}3. ${green_bg}Security Matters:${reset}"
-echo -e "Your system's security is our priority. TeknoHelper has been carefully designed and tested to ensure that it won't cause harm to your system. You can confidently explore and experiment without worry."
+echo -e "Your system's security is our priority. TMHelper has been carefully designed and tested to ensure that it won't cause harm to your system. You can confidently explore and experiment without worry."
 
 # Print the encouragement to keep Termux Helper
-echo -e "\nWe encourage you to reconsider uninstalling TeknoHelper. It's a versatile resource that can empower you in your coding, testing, and exploration endeavors.\n"
+echo -e "\nWe encourage you to reconsider uninstalling TMHelper. It's a versatile resource that can empower you in your coding, testing, and exploration endeavors.\n"
 
 # Prompt user for input with red background
-echo -e -n "${red_bg}${bold}Type 'uninstall' to proceed with uninstallation or press Enter to keep TeknoHelper:"
+echo -e -n "${red_bg}${bold}Type 'uninstall' to proceed with uninstallation or press Enter to keep TMHelper:"
 read -p "" user_input
 echo -e "${reset}"
 # Check user's input and respond accordingly
 if [[ "$user_input" == "uninstall" ]]; then
     echo "Uninstalling..."
-    bash $PREFIX/TeknoHelper/uninstall.sh
+    bash $PREFIX/TMHelper/uninstall.sh
     break
 else
-    echo "Thank you for choosing to keep TeknoHelper. It's an investment in your productivity and growth."
+    echo "Thank you for choosing to keep TMHelper. It's an investment in your productivity and growth."
 fi
 
 
@@ -416,7 +416,7 @@ fi
             
             ;;
            21)
-        type_animation "WAIT WE ARE UPDATING TeknoHelper..."
+        type_animation "WAIT WE ARE UPDATING TMHelper..."
         cd /data/data/com.termux/files/usr/TMHelper/
         git reset --hard
         git pull --force
@@ -434,7 +434,7 @@ fi
 
 if [ "$lastchoice" == "0" ]; then
     echo
-    green_text_animation "TeknoHelper Exited successfully."
+    green_text_animation "TMHelper Exited successfully."
     echo
     print_random_nice_message
     exit 0
