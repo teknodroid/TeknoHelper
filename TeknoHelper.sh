@@ -78,9 +78,9 @@ display_menu() {
      echo -e "\033[33;5m    TeknoDroid\033[0m \033[32mTeknoHelper Menü\033[0m"
     echo -e "\033[1;32m************************************\033[0m"
     type_animation "Please select an option:"
-    type_animation "1] MaxPhisher"
-    type_animation "2] PyPhisher"
-    type_animation "3] Clifty"
+    type_animation "1] SMS BOMBASI"
+    type_animation "2] Termux Arayüz"
+    type_animation "3] Termux Şifre Ekle"
     type_animation "4] MaskPhish"
     type_animation "5] CamPhish"
     type_animation "6] Ubuntu Shell"
@@ -126,37 +126,40 @@ reset="\033[0m"
         exit 0
             ;;
         1)
-            type_animation "\nYou selected: MaxPhisher"
-            type_animation "Please Wait MaxPhisher is Installing... "
+            type_animation "\nYou selected: SMS BOMBASI"
+            type_animation "Please Wait SMS BOMBASI is Installing... "
             sleep 5
             clear
             cd $HOME
-            mkdir maxphisher
-            cd maxphisher
-            rm -rf maxphisher.py
-            wget https://raw.githubusercontent.com/KasRoudra/MaxPhisher/main/maxphisher.py && python3 maxphisher.py
+            pkg install nodejs
+            apt upgrade
+            git clone https://github.com/teknodroid/TeknoEvreniSmsBomb
+            cd TeknoEvreniSmsBomb
+            npm install
+            node index.js
             ;;
         2)
-            type_animation "\nYou selected: PyPhisher"
-            type_animation "Please Wait PyPhisher is Installing... "
+            type_animation "\nYou selected: Termux Arayüz"
+            type_animation "Please Wait Termux Arayüz is Installing... "
             sleep 5
             clear
             cd $HOME
-            mkdir pyphisher
-            cd pyphisher
-            rm -rf pyphisher.py
-            wget https://raw.githubusercontent.com/KasRoudra/PyPhisher/main/pyphisher.py && python3 pyphisher.py
+            pkg up update upgrade
+            pkg install git
+            git clone https://github.com/teknodroid/tekno-termuxarayuzu
+            cd tekno-termuxarayuzu
+            bash tekno-termuxarayuzu.sh
             ;;
         3)
-            type_animation "\nYou selected: Clifty"
-            type_animation "Please Wait Clifty is Installing... "
+            type_animation "\nYou selected: Termux Şifre Ekle"
+            type_animation "Please Wait Termux Şifre Ekle is Installing... "
             sleep 5
             clear
             cd $HOME
-            mkdir CLIFTY
-            cd CLIFTY
-            rm -rf clifty.sh
-            wget https://raw.githubusercontent.com/Alygnt/Clifty/main/clifty.sh && chmod +x clifty.sh && bash clifty.sh
+            pkg install git python
+            git clone https://github.com/teknodroid/Tekno-TermuxaSifreEkle
+            cd Tekno-TermuxaSifreEkle
+            bash setup.sh
             ;;
         4)
             type_animation "\nYou selected: MaskPhish"
