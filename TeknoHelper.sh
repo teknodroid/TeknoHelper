@@ -11,50 +11,44 @@ function type_animation() {
     local interval=0.000001
 
     for ((i = 0; i < ${#text}; i += 3)); do
-        echo -n -e "\033[1;32m${text:$i:3}\033[0m"
+        echo -n -e "\034[1;32m${text:$i:3}\034[0m"
         sleep $interval
     done
 echo
 }
 
 function red_exit() {
-    echo -e "\033[1;31m0] Exit\033[0m"
+    echo -e "\e[1;31m0] Exit\e[0m"
 }
 
 function blue_text_animation() {
     local text="$1"
-    echo -e -n "\033[1;42;97m$text\033[0m"
+    echo -e -n "\034[1;42;97m$text\034[0m"
 }
 
 
 # Define an array of positive messages
 positive_messages=(
-"Muhteşem bir gün geçir!"
-"Anladın bunu! Devam et."
-"Gittiğiniz her yere pozitifliği yayın."
-"Kendinize ve hayallerinize inanın."
-"Harika şeyler başarabilecek kapasitedesin."
-"Olumlu tavrınız dünyayı değiştirebilir."
-"Zorlukları büyüme fırsatları olarak kabul edin."
-"Gülümsemeyi ve birinin gününü aydınlatmayı unutmayın."
-"Çabalarınız uzun vadede karşılığını verecektir."
-"Yalnız değilsiniz; desteğe ihtiyacınız olursa bize ulaşın."
-"Potansiyeliniz sınırsız. İlerlemeye devam edin."
-"Bir fark yaratma gücüne sahipsiniz."
-"Zorluklar başarıya giden basamaklardır."
-"Bugün bir hediye; bu yüzden ona hediye deniyor."
-"Aziminiz sizi başarıya götürecektir."
-"Pozitiflik yayın ve etrafınızdakilere ilham verin."
-"Geleceği tahmin etmenin en iyi yolu onu yaratmaktır."
-"Büyüklüğe ulaşmak için gereken niteliklere sahipsiniz."
-"Başarı olumlu bir zihniyet ve sıkı çalışmayla başlar."
-"Yolculuğunuz tamamen size aittir; onu tümüyle kucaklayın."
-"Siz başkalarının hayatında bir ışık fenerisiniz."
-"İleriye doğru atılan küçük adımlar yine de ilerlemeye yol açar."
-"İçinizdeki büyüye inanın." "Hayalleriniz geçerli ve ulaşılabilir."
-"Her türlü zorluğun üstesinden gelebilecek güce sahipsiniz."
-"Varlığınız olumlu bir etki yaratıyor."
-"Yüzünüzü güneş ışığına çevirin, gölgeler arkanıza düşecektir."
+"TeknoDroid ve TeknoHelper, bilgi ve yeteneklerinizi geliştirmeniz için güçlü bir kombinasyon oluşturuyor!"
+"TeknoDroid ile TeknoHelper, kodlama dünyasındaki sınırları zorlamanızı sağlar!"
+"TeknoDroid'unuzla TeknoHelper, yaratıcı projeler oluşturmanızı ve bilgi birikiminizi artırmanızı destekler!"
+"TeknoDroid, kod yazma sürecinizi daha kolay ve verimli hale getirir!"
+"TeknoDroid'unuz sayesinde her kod satırı daha anlamlı ve güçlü hale gelir!"
+"TeknoDroid ile TeknoHelper, projelerinizi daha hızlı ve profesyonelce yönetmenizi sağlar!"
+"Her TeknoDroid kullanıcısı, bilgi birikimini artırarak dünyayı daha iyi bir yer haline getirebilir!"
+"TeknoDroid, yeni teknolojilere adım atmanızı ve kendinizi ifade etmenizi sağlar!"
+"TeknoDroid'unuzu kullanarak kodlama dünyasına güçlü bir giriş yapabilirsiniz!"
+"TeknoDroid, kodlama yeteneklerinizi hızla geliştirebilmeniz için harika bir araçtır!"
+"TeknoHelper, yaratıcı projeler oluşturmanıza ve bilgi birikiminizi artırmanıza olanak tanır!"
+"TeknoHelper, kodlamayı öğrenmek isteyenler için harika bir başlangıç noktasıdır!"
+"Her TeknoDroid kullanıcısı, TeknoHelper ile projelerini daha da büyütebilir!"
+"TeknoHelper, bilgi ve yeteneklerinizi paylaşmanız için mükemmel bir platform sunar!"
+"TeknoHelper, yeni teknolojilere adım atmanızı ve kendinizi ifade etmenizi sağlar!"
+"TeknoDroid'unuzun gücü ile TeknoHelper kullanarak kodlama dünyasına güçlü bir giriş yapabilirsiniz!"
+"Her TeknoDroid kullanıcısı, bilgi birikimini artırarak büyük projelere imza atabilir!"
+"TeknoDroid, her gün yeni bir şey öğrenmek için harika bir fırsattır!"
+"TeknoDroid ile kodlama yeteneklerinizi geliştirmenin keyfini çıkarın!"
+"TeknoDroid ve TeknoHelper, yaratıcı projeler oluşturmanız ve bilgi birikiminizi paylaşmanız için harika bir kombinasyondur!"
 )
 
 # Define a function to print a random positive message in bold
@@ -63,7 +57,7 @@ print_random_nice_message() {
     random_index=$((RANDOM % ${#positive_messages[@]}))
 
     # Print the randomly selected message in bold
-    echo -e "\033[1m${positive_messages[random_index]}\033[0m"
+    echo -e "\035[1m${positive_messages[random_index]}\035[0m"
 }
 
 
@@ -71,35 +65,36 @@ print_random_nice_message() {
 display_menu() {
     clear
 
-    type_animation "+-+-+-+-+-+-+-+-+-+-+-+"
-    type_animation "|T|E|K|N|O|H|E|L|P|E|R|"
-    type_animation "+-+-+-+-+-+-+-+-+-+-+-+"
-    echo -e "\033[1;32m************************************\033[0m"
-     echo -e "\033[33;5m    TEKNODROİDEVRENİ\033[0m \033[32mTeknoHelper Menü\033[0m"
-    echo -e "\033[1;32m************************************\033[0m"
-    type_animation "Please select an option:"
-    type_animation "1] SMS BOMBASI"
-    type_animation "2] Termux Arayüz"
-    type_animation "3] Termux Şifre Ekle"
-    type_animation "4] MaskPhish"
-    type_animation "5] CamPhish"
-    type_animation "6] Ubuntu Shell"
-    type_animation "7] Trace Exact Location"
-    type_animation "8] Cam-Dumper"
-    type_animation "9] Track-IP"
-    type_animation "10] BruteForce"
-    type_animation "11] Tool-X"
-    type_animation "12] Oh-My-Shell"
-    type_animation "13] Local2Internet"
-    type_animation "14] StylishTermux"
-    type_animation "15] SetFont"
-    type_animation "16] HPhisher"
-    type_animation "17] SpamX"
-    type_animation "18] Seeker"
-    type_animation "19] Banner-generator"
-    type_animation "20] Kali-Linux"
-    type_animation "21] Update TeknoHelper"
-    type_animation "22] Uninstall TeknoHelper"
+    echo "  ╭──────────────────────╮"
+    echo "  │   TeknoHelper Menü   │"
+    echo "  │   TeknoDroid Evreni  │"
+    echo "  ╰──────────────────────╯"
+    echo "************************************"
+    echo "    TEKNOHELPER MENÜ"
+    echo "************************************"
+    echo "Lütfen Bir Seçenek Seçin:"
+    echo "1] SMS BOMBASI"
+    echo "2] Termux Arayüz"
+    echo "3] Termux Şifre Ekle"
+    echo "4] MaskPhish"
+    echo "5] CamPhish"
+    echo "6] Ubuntu Shell"
+    echo "7] Trace Exact Location"
+    echo "8] Cam-Dumper"
+    echo "9] Track-IP"
+    echo "10] BruteForce"
+    echo "11] Tool-X"
+    echo "12] Oh-My-Shell"
+    echo "13] Local2Internet"
+    echo "14] StylishTermux"
+    echo "15] SetFont"
+    echo "16] HPhisher"
+    echo "17] SpamX"
+    echo "18] Seeker"
+    echo "19] Banner-generator"
+    echo "20] Kali-Linux"
+    echo "21] Update TeknoHelper"
+    echo "22] Uninstall TeknoHelper"
     red_exit
 }
 
@@ -108,7 +103,7 @@ display_menu() {
 # Main loop
 while true; do
     display_menu
-    blue_text_animation ">> Select an Option --> "
+    blue_text_animation ">> BİR SEÇENEK SEÇİN --> "
     echo -n " "
     read choice
 
@@ -378,25 +373,25 @@ echo -e "${red_bg}${bold} Uninstall Page: TeknoHelper ${reset}"
 echo -e "${bold}Dear User,${reset}"
 
 # Print the introductory part
-echo -e "We understand that you're considering uninstalling TeknkHelper, but we'd like to take a moment to highlight the valuable advantages it brings to your experience.\n"
+echo -e "TeknkHelper'ı kaldırmayı düşündüğünüzü biliyoruz, ancak deneyiminize getirdiği değerli avantajları vurgulamak için biraz zaman ayırmak istiyoruz.\n"
 
 # Print the key benefits
-echo -e "Here's why TeknoHelper is an asset that you might want to keep:\n"
+echo -e "TeknoHelper'ın elinizde tutmak isteyebileceğiniz bir varlık olmasının nedeni budur:\n"
 
 echo -e -n "${bold}1. ${blue_bg}Powerful and Comprehensive:${reset}"
-echo -e "TeknoHelper is not just another program; it's a power tool designed to provide you with a curated selection of hacking, penetration testing, and programming tools. These tools are organized into us"
+echo -e "TeknoHelper sıradan bir program değil; size hackleme, sızma testi ve programlama araçlarının seçilmiş bir seçimini sunmak için tasarlanmış güçlü bir araçtır. Bu araçlar bize göre düzenlenmiştir"
 
 echo -e -n "${bold}2. ${blue_bg}Efficiency and Ease of Use:${reset}"
-echo -e "TeknoHelper streamlines your workflow by offering a simple menu that allows you to quickly install new and updated scripts. No more hunting for tools or dealing with complex installations – Termux"
+echo -e "TeknoHelper, yeni ve güncellenmiş scriptleri hızlı bir şekilde kurmanıza olanak tanıyan basit bir menü sunarak iş akışınızı kolaylaştırır. Artık alet aramaya veya karmaşık kurulumlarla uğraşmaya son – Termux"
 
 echo -e -n "${bold}3. ${blue_bg}Security Matters:${reset}"
-echo -e "Your system's security is our priority. TeknoHelper has been carefully designed and tested to ensure that it won't cause harm to your system. You can confidently explore and experiment without worry."
+echo -e "Sisteminizin güvenliği bizim önceliğimizdir. TeknoHelper sisteminize zarar vermeyeceğinden emin olmak için özenle tasarlanmış ve test edilmiştir. Endişelenmeden güvenle keşfedebilir ve deneyebilirsiniz."
 
 # Print the encouragement to keep Termux Helper
-echo -e "\nWe encourage you to reconsider uninstalling TeknoHelper. It's a versatile resource that can empower you in your coding, testing, and exploration endeavors.\n"
+echo -e "\nTeknoHelper'ı kaldırmayı yeniden düşünmenizi öneririz. Kodlama, test etme ve keşif çalışmalarınızda size güç verebilecek çok yönlü bir kaynaktır.\n"
 
 # Prompt user for input with red background
-echo -e -n "${red_bg}${bold}Type 'uninstall' to proceed with uninstallation or press Enter to keep TeknoHelper:"
+echo -e -n "${red_bg}${bold}Kaldırma işlemine devam etmek için 'uninstall' yazın veya TeknoHelper'ı kullanmaya devam etmek için Enter'a basın:"
 read -p "" user_input
 echo -e "${reset}"
 # Check user's input and respond accordingly
@@ -405,7 +400,7 @@ if [[ "$user_input" == "uninstall" ]]; then
     bash $PREFIX/TeknoHelper/uninstall.sh
     break
 else
-    echo "Thank you for choosing to keep TeknoHelper. It's an investment in your productivity and growth."
+    echo "TeknoHelper'ı tercih ettiğiniz için teşekkür ederiz. Bu, üretkenliğinize ve büyümenize yapılan bir yatırımdır."
 fi
 
 
