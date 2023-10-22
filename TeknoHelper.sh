@@ -59,9 +59,9 @@ display_menu() {
     echo -e "  │   TeknoDroid Evreni  │"
     echo -e "  ╰──────────────────────╯\033[0m"
     echo -e "\033[1;33m************************************"
-    echo "      TEKNOHELPER MENÜ"
+    echo "۞ TEKNO HELPER TOPLU TOOL ۞"
     echo "************************************"
-    echo "Lütfen Bir Seçenek Seçin:"
+    echo -e "\033[1;34mLütfen Bir Seçenek Seçin:\033[0m"
     echo -e "\033[1;32m1] SMS BOMBASI"
     echo -e "2] Termux Arayüz"
     echo -e "3] Termux Şifre Ekle"
@@ -90,7 +90,7 @@ display_menu() {
 # Ana döngü
 while true; do
     display_menu
-    echo -e -n "\033[1;32m>> BİR SEÇENEK SEÇİN --> \033[0m"
+  echo -e -n "\033[1;36m>> BİR SEÇENEK SEÇİN --> \033[0m"
     read choice
 
     case $choice in
